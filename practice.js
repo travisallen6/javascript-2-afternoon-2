@@ -185,7 +185,25 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-function removeItem(myGroceryList,item)
+function removeItem(myGroceryList,item){
+  for(let i=0; i<myGroceryList.length; i++){
+    if(myGroceryList[i]===item){
+      myGroceryList.splice(i,1);
+    }
+  }
+  return myGroceryList;
+}
+
+function addItem(myGroceryList, item){
+  for(let i=0; i<myGroceryList.length; i++){
+    if(myGroceryList[i]===item){
+      return myGroceryList
+    }
+  }
+  myGroceryList.push(item);
+  return myGroceryList;
+
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -195,6 +213,13 @@ function removeItem(myGroceryList,item)
 */
 
 //Code Here
+function maker(){
+  let ary = [];
+  for(let i=1; i<=215; i++){
+    ary.push(i);
+  }
+  return ary;
+}
 
 
 
@@ -211,7 +236,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
+function addTen(numbers){
+  resultArray = [];
+  for(let i=0; i<numbers.length; i++){
+    resultArray.push(Number(numbers[i])+10);
+  }
+  return resultArray;
+}
+console.log(addTen());
 
 
 ////////// PROBLEM 11 //////////
@@ -236,7 +268,12 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1,arr2){
+  if(arr1.length > arr2.length){
+    return arr1;
+  }
+  return arr2;
+}
 
 
 /*
@@ -248,7 +285,15 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2){
+  let result = [];
+  for(let i=0; i<arr1.length; i++){
+    if(arr2.includes(arr1[i])){
+      result.push(arr1[i]);
+    }
+  }
+  return result;
+}
 
 
 ////////// PROBLEM 12 //////////
