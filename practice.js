@@ -243,7 +243,7 @@ function addTen(numbers){
   }
   return resultArray;
 }
-console.log(addTen());
+console.log(addTen([1]));
 
 
 ////////// PROBLEM 11 //////////
@@ -333,8 +333,12 @@ var colt = {
 */
 
 //Code Here
-
-
+// var devMountainEmployees = [tyler, cahlan, ryan, colt];
+// devMountainEmployees.push(tyler,cahlan,ryan,colt);
+devMountainEmployees.push(tyler);
+devMountainEmployees.push(cahlan);
+devMountainEmployees.push(ryan);
+devMountainEmployees.push(colt);
 
 /*
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
@@ -342,6 +346,11 @@ var colt = {
 */
 
 //Code Here
+for(let i=0; i<devMountainEmployees.length; i++){
+  if(devMountainEmployees[i].name === 'Cahlan'){
+    devMountainEmployees.splice(i,1);
+  }
+}
 
 
 
@@ -354,6 +363,8 @@ var colt = {
 */
 
 //Code Here
+let users = [];
+
 
 
 
@@ -373,6 +384,7 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
+
 
 
 
